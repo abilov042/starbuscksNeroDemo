@@ -1,17 +1,17 @@
 package starbuscksNeroDemo.core.concretes;
 
-import starbuscksNeroDemo.core.abstracts.CustummerCheckService;
-import starbuscksNeroDemo.entities.concetes.Custummer;
+import starbuscksNeroDemo.core.abstracts.CustomerCheckService;
+import starbuscksNeroDemo.entities.concetes.Customer;
 import starbuscksNeroDemo.mernisServiseReferense.KPSPublicSoapClinet;
 
-public class KPSPublicCheckReferenseAdapter implements CustummerCheckService {
+public class KPSPublicCheckReferenseAdapter implements CustomerCheckService {
 
 	@Override
-	public boolean CheckDate(Custummer custummer) {
+	public boolean CheckDate(Customer customer) {
 		
 		KPSPublicSoapClinet client  = new KPSPublicSoapClinet();
 		
-		return client.checkDate(custummer.getNationalityId(), custummer.getFirstName(), custummer.getLastName(), custummer.getDateOfYear() );
+		return client.checkDate(customer.getNationalityId(), customer.getFirstName(), customer.getLastName(), customer.getDateOfYear() );
 	}
 
 	

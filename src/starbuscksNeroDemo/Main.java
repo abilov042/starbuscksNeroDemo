@@ -1,18 +1,18 @@
 package starbuscksNeroDemo;
 
-import starbuscksNeroDemo.business.abstracts.CustummerService;
-import starbuscksNeroDemo.business.concretes.StarbucksCustummerManager;
+import starbuscksNeroDemo.business.abstracts.CustomerService;
+import starbuscksNeroDemo.business.concretes.StarbucksCustomerManager;
 import starbuscksNeroDemo.core.concretes.KPSPublicCheckReferenseAdapter;
-import starbuscksNeroDemo.entities.concetes.Custummer;
+import starbuscksNeroDemo.entities.concetes.Customer;
 
 import java.time.LocalDate;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Custummer custummer = new Custummer(1, 12344, "Shamil", "Abilov", LocalDate.of(2004,11, 8));
-		CustummerService custummerService = new StarbucksCustummerManager(new KPSPublicCheckReferenseAdapter());
-		custummerService.seve(custummer);
+		Customer customer = new Customer(1, 12344, "Shamil", "Abilov", LocalDate.of(2004,11, 8));
+		CustomerService customerService = new StarbucksCustomerManager(new KPSPublicCheckReferenseAdapter());
+		customerService.seve(customer);
 	}
 
 }

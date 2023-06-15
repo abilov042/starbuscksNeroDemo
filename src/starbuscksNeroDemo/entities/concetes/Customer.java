@@ -4,14 +4,14 @@ import java.time.LocalDate;
 
 import starbuscksNeroDemo.entities.abstacts.Entity;
 
-public class Custummer implements Entity {
+public class Customer implements Entity {
 	private int id;
 	private long nationalityId;
 	private String firstName;
 	private String lastName;
 	private LocalDate dateOfYear;
 	
-	public Custummer(int id, long nationalityId, String firstName, String lastName, LocalDate dateOfYear) {
+	public Customer(int id, long nationalityId, String firstName, String lastName, LocalDate dateOfYear) {
 		super();
 		this.id = id;
 		this.nationalityId = nationalityId;

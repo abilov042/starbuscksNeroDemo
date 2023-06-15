@@ -2,37 +2,37 @@ package starbuscksNeroDemo.dataAccess.conctretes;
 
 import java.util.List;
 
-import starbuscksNeroDemo.dataAccess.abstracts.CustummerDao;
-import starbuscksNeroDemo.entities.concetes.Custummer;
+import starbuscksNeroDemo.dataAccess.abstracts.CustomerDao;
+import starbuscksNeroDemo.entities.concetes.Customer;
 
-public class HibernateCustummerDao implements CustummerDao {
+public class HibernateCustomerDao implements CustomerDao {
 
 	@Override
-	public void add(Custummer custummer) {
+	public void add(Customer customer) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void delete(Custummer custummer) {
+	public void delete(Customer customer) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void updata(Custummer custummer) {
+	public void updata(Customer customer) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public Custummer getId(int id) {
+	public Customer getId(int id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Custummer> getAll() {
+	public List<Customer> getAll() {
 		// TODO Auto-generated method stub
 		return null;
 	}
